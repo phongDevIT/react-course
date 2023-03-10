@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Card from "./component/card/Card";
+import CardList from "./component/card/CardList";
+import { GlobalStyles } from "./GlobalStyles";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <GlobalStyles></GlobalStyles>
+            {/* <YoutubeList></YoutubeList> */}
+            {/* <Toggle></Toggle>
+            <Counter></Counter> */}
+            {/* <Game></Game> */}
+            {/* <Button>Primary</Button>
+            <Button secondary>Secondary</Button> */}
+            <CardList>
+                <Card primary={true}></Card>
+                <Card></Card>
+                <Card></Card>
+                <Card></Card>
+                <Card></Card>
+                <Card></Card>
+            </CardList>
+        </div>
+    );
 }
 
 export default App;
