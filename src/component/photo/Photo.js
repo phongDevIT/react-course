@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import axios from "axios";
 // https://picsum.photos/v2/list?page=2&limit=100
+// https://picsum.photos/200/300/?blur=2
 const getRanDomPhotos = async (page) => {
     try {
         const response = await axios.get(
